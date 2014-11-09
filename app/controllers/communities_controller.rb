@@ -3,6 +3,10 @@ class CommunitiesController < ApplicationController
     end
 
     def create
-    	render plain: params[:community].inspect
+      @community = Community.new(params[:community])
+     
+      @community.save
+      #redirect_to @community
+      render plain: params[:article].inspect
     end
 end

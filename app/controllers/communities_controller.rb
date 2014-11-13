@@ -4,7 +4,6 @@ class CommunitiesController < ApplicationController
 
     def create
         @community = Community.new(community_params)
-
         @community.save
         redirect_to @community
     end

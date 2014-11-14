@@ -17,3 +17,6 @@
 psd/
 
 public/uploads
+
+#PP
+*.orig
